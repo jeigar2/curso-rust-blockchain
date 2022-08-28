@@ -12,3 +12,12 @@ heron = { version = "0.12.1", default-features = false, features = ["2d"] }
 ```
 
 Agregar una nueva carpeta `assets` y dentro agregamos las imagenes [assets.zip](https://drive.google.com/drive/folders/1Gg1kFfple_9cM0slGHb6fumXu3JMSVAG)
+
+## Referencias
+
+Bevy requiere de ciertas [librerías](https://github.com/bevyengine/bevy/blob/main/docs/linux_dependencies.md) en el sistema, sin estas no compila.
+
+[Bevy Book](https://bevyengine.org/learn/book/introduction/)
+[Docs](https://docs.rs/bevy/latest/bevy/)
+[Bevy Learn](https://bevyengine.org/learn/)
+[Bevy Examples](https://bevyengine.org/examples/)
