@@ -1,42 +1,17 @@
-# Conectando rust con el navegador
+# Videojuego con rust
 
-- Para conectar el lenguaje rust con el navegador se realizan los siguientes pasos:
-  - Se ha crea un proyecto desde el terminal con el flag `lib`
-    - Comando completo: `cargo new --lib rust-wasm`
-
-  - Se ha agregado en el fichero `Cargo.toml`
-    - Seccion nueva `[lib]`
-      - agregado la linea `crate-type = ["cdylib", "rlib"]`
-    - Sección `[dependencies]`
-      - agregada la línea `wasm-bindgen = "0.2.82"`
-  - Se ha instalado desde el terminal en el proyecto `wasm-pack build --target web`
-
-Fichero Cargo.toml
+- Creando el videojuego del pom, con la ayuda del framework Bevy.
+- Crear un proyecto nuevo `cargo new rust-pong`
+- Se ha agregado en el fichero `Cargo.toml`
 
 ```r
-[lib]
-crate-type = ["cdylib", "rlib"]
-
 [dependencies]
-wasm-bindgen = "0.2.82"
+rand = "0.8.0"
+bevy = "0.5"
+heron = { version = "0.12.1", default-features = false, features = ["2d"] }
 ```
 
-Se ha creado una libreria de rust
-
-```rs
-use wasm_bindgen::prelude::*;
-
-#[wasm_bindgen]
-extern {
-    pub fn alert(s: &str);
-}
-
-#[wasm_bindgen]
-pub fn saludar(nombre: &str){
-    alert(&format!("Hola, {}, ¿Cómo estás?", nombre));
-}
-```
-
+<<<<<<< Updated upstream
 Se ha creado una pagina html, que hace uso de rust.
 
 index.html
@@ -65,3 +40,6 @@ index.html
 Para ejecutarlo en un servidor desde un terminal se ejecuta el el comando `python3 -m http.server 8099`
 
 Abrir un navegado con la url localhost:8099
+=======
+Agregar una nueva carpeta `assets` y dentro agregamos las imagenes [assets.zip](https://drive.google.com/drive/folders/1Gg1kFfple_9cM0slGHb6fumXu3JMSVAG)
+>>>>>>> Stashed changes
