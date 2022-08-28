@@ -69,6 +69,6 @@ Abrir un navegado con la url localhost:8099
 ## Referencias
 
 - Curso Básico de Rust: Variables, Ciclos y Funciones - Platzi
-  - https://platzi.com/cursos/rust-basico/
+  - <https://platzi.com/cursos/rust-basico/>
 - Funciones lambda - Platzi
-  - https://platzi.com/clases/1826-java-funcional/26225-funciones-lambda/
+  - <https://platzi.com/clases/1826-java-funcional/26225-funciones-lambda/>
